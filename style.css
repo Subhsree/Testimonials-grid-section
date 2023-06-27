@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    background-color: white;
+    margin:0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.gridcontainer
+{
+    background-color: rgb(255, 255, 255);
+    height:auto;
+    width:100%;
+    display: grid;
+    gap: 20px;   
+    padding: 130px 130px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows:auto auto auto auto;
+}
+.grid-item-1
+{
+    background-color:hsl(263, 55%, 52%); 
+    background-image: url('images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position:80% 0%;
+    grid-column:1 / span 2;
+    grid-row:1;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.grid-item-2
+{
+    background-color: hsl(217, 19%, 35%);
+    grid-row:1;
+    grid-column:3;
+    padding: 25px;
+    border-radius: 12px;
+    
+}
+.grid-item-3
+{
+    background-color: hsl(0, 0%, 81%);
+    grid-column:4;
+    grid-row:1 / span 2;
+    padding:25px;
+    border-radius: 12px;
+    box-shadow: 0  7px  12pxs rgb(205, 202, 202);
+   
+}
+.grid-item-4
+{
+    background-color: hsl(0, 0%, 81%);
+    grid-row:2;
+    grid-column: 1;
+    padding:25px;
+    border-radius: 12px;
+    
+}
+
+.grid-item-5
+{
+    background-color: hsl(219, 29%, 14%);   
+    grid-column:2 /span 2;
+    grid-row:2;
+    padding:25px;
+    border-radius: 12px;
+    
+}
+.quote1
+{
+    color: hsl(0, 0%, 81%);
+    font-weight: 600;
+    text-align: justify;
+}
+.quote2
+{
+    color: hsl(210, 46%, 95%);
+    opacity: 70%;
+    font-weight: 500;
+    text-align: justify;
+}
+.fontgray
+{
+    color: hsl(217, 19%, 35%);
+}
+.personinfo
+{
+    display: flex;
+}
+.author-details
+{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-left: 30px;
+    align-items: flex-start;
+    
+}
+
+.profile-picture
+{
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color:hsl(0, 0%, 81%) ;
+}
